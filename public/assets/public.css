@@ -5966,48 +5966,61 @@ footer .nav > li > a:hover {
   left: 0;
 }
 
-/* line 156, ../../app/assets/stylesheets/_galleria.scss */
-.galleria-image-nav-left,
-.galleria-image-nav-right {
-  opacity: 0.3;
-  filter: alpha(opacity=30);
-  cursor: pointer;
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  left: 50%;
-  margin-left: -32px;
-  top: 0;
-  z-index: 2;
-  background-position: 8px 2px;
-  background-color: black;
+/* line 154, ../../app/assets/stylesheets/_galleria.scss */
+.galleria-image-nav-left:before {
+  content: "\2039";
 }
 
-/* line 170, ../../app/assets/stylesheets/_galleria.scss */
+/* line 157, ../../app/assets/stylesheets/_galleria.scss */
+.galleria-image-nav-right:before {
+  content: "\203A";
+}
+
+/* line 161, ../../app/assets/stylesheets/_galleria.scss */
+.galleria-image-nav-left,
+.galleria-image-nav-right {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+  margin-left: -32px;
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 30px;
+  color: white;
+  text-align: center;
+  background: black;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  cursor: pointer;
+}
+
+/* line 187, ../../app/assets/stylesheets/_galleria.scss */
 .galleria-image-nav-right {
   left: auto;
   margin-left: 0;
   right: 50%;
   margin-right: -32px;
-  background-position: -254px 23px;
-  z-index: 2;
 }
 
-/* line 180, ../../app/assets/stylesheets/_galleria.scss */
+/* line 195, ../../app/assets/stylesheets/_galleria.scss */
 .notouch .galleria-image-nav-left:hover,
 .notouch .galleria-image-nav-right:hover {
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
-/* line 185, ../../app/assets/stylesheets/_galleria.scss */
+/* line 200, ../../app/assets/stylesheets/_galleria.scss */
 .touch .galleria-image-nav-left:active,
 .touch .galleria-image-nav-right:active {
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
-/* line 190, ../../app/assets/stylesheets/_galleria.scss */
+/* line 205, ../../app/assets/stylesheets/_galleria.scss */
 .galleria-thumb-nav-left,
 .galleria-thumb-nav-right {
   cursor: pointer;
@@ -6019,11 +6032,11 @@ footer .nav > li > a:hover {
   height: 40px;
   width: 23px;
   z-index: 3;
-  opacity: .8;
+  opacity: 0.8;
   filter: alpha(opacity=80);
 }
 
-/* line 204, ../../app/assets/stylesheets/_galleria.scss */
+/* line 218, ../../app/assets/stylesheets/_galleria.scss */
 .galleria-thumb-nav-right {
   background-position: -578px 5px;
   border-right: none;
@@ -6031,14 +6044,14 @@ footer .nav > li > a:hover {
   left: auto;
 }
 
-/* line 211, ../../app/assets/stylesheets/_galleria.scss */
+/* line 225, ../../app/assets/stylesheets/_galleria.scss */
 .galleria-thumbnails-container .disabled {
-  opacity: .2;
+  opacity: 0.2;
   filter: alpha(opacity=20);
   cursor: default;
 }
 
-/* line 218, ../../app/assets/stylesheets/_galleria.scss */
+/* line 231, ../../app/assets/stylesheets/_galleria.scss */
 .notouch .galleria-thumb-nav-left:hover,
 .notouch .galleria-thumb-nav-right:hover {
   opacity: 1;
@@ -6046,7 +6059,7 @@ footer .nav > li > a:hover {
   background-color: #111;
 }
 
-/* line 225, ../../app/assets/stylesheets/_galleria.scss */
+/* line 237, ../../app/assets/stylesheets/_galleria.scss */
 .touch .galleria-thumb-nav-left:active,
 .touch .galleria-thumb-nav-right:active {
   opacity: 1;
@@ -6054,26 +6067,24 @@ footer .nav > li > a:hover {
   background-color: #111;
 }
 
-/* line 231, ../../app/assets/stylesheets/_galleria.scss */
+/* line 242, ../../app/assets/stylesheets/_galleria.scss */
 .notouch .galleria-thumbnails-container .disabled:hover {
-  opacity: .2;
+  opacity: 0.2;
   filter: alpha(opacity=20);
   background-color: transparent;
 }
 
-/* line 238, ../../app/assets/stylesheets/_galleria.scss */
+/* line 248, ../../app/assets/stylesheets/_galleria.scss */
 .galleria-carousel .galleria-thumb-nav-left,
 .galleria-carousel .galleria-thumb-nav-right {
   display: block;
 }
 
-/* line 247, ../../app/assets/stylesheets/_galleria.scss */
+/* line 255, ../../app/assets/stylesheets/_galleria.scss */
 .galleria-thumb-nav-left,
 .galleria-thumb-nav-right,
 .galleria-info-link,
-.galleria-info-close,
-.galleria-image-nav-left,
-.galleria-image-nav-right {
+.galleria-info-close {
   background-image: url(/assets/galleria/themes/classic/classic-map.png);
   background-repeat: no-repeat;
 }
@@ -6282,7 +6293,7 @@ article .snap {
   position: absolute;
   top: -9px;
   left: 50%;
-  margin-left: -5px;
+  margin-left: -9px;
   width: 0;
   height: 0;
   border-left: 10px solid transparent;

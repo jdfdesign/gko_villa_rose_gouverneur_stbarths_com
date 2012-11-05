@@ -106,8 +106,12 @@ label {
 		padding: $baseLineHeight 0;
 		font-size: $baseFontSize + 4;
 		border: none;
+		[class^="icon-"], [class*=" icon-"] {
+			background-image: url(/assets/twitter/bootstrap/glyphicons-halflings.png);
+			margin: 2px 0 0 2px;
+			@include opacity(40);
+		}	
 	}
-
 }
 #locales-menu ul.nav li > a {
 	font-size: $baseFontSize - 2;

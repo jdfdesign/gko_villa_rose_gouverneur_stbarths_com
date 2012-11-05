@@ -3,7 +3,9 @@ class CleanCoreElements < ActiveRecord::Migration
   class Section < ActiveRecord::Base
   
   end
+  class Home < ActiveRecord::Base
   
+  end
   def up
       drop_table :element_texts if table_exists?(:element_texts)
       drop_table :element_assignments if table_exists?(:element_assignments)

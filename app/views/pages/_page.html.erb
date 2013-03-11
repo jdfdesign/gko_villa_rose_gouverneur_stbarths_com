@@ -2,7 +2,7 @@
 	<div class="span12 page-content"> 
 		<% if page.images.any? %>
 		<div class='page-images'>
-			<%= render_slideshow_for(page) %>
+			<%= render_slideshow_for(page, :plugin => 'slideshow') %>
 			<h3 class='slideshow-title'><%= page.title %></h3>
 		</div>
 		<% end %>

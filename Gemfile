@@ -7,15 +7,7 @@ group :assets do
   gem 'uglifier', '~> 2.4.0'
 end
 group :production do
-<<<<<<< HEAD
-<<<<<<< HEAD
   git "git@github.com:jdfdesign/gko_cms3.git", :tag => "v0.8.10.1" do
-=======
-  git "git@github.com:jdfdesign/gko_cms3.git", :tag => "v0.8.09.rc1" do
->>>>>>> FETCH_HEAD
-=======
-  git "git@github.com:jdfdesign/gko_cms3.git", :tag => "v0.8.09.rc1" do
->>>>>>> FETCH_HEAD
    gem 'gko_core'
    gem 'gko_auth'
    gem "gko_documents"
@@ -28,13 +20,5 @@ end
 #  gem "gko_auth", :path => '~/Github/gko_cms3/gko_auth'
 #  gem "gko_documents", :path => '~/Github/gko_cms3/gko_documents'
 #  gem "gko_inquiries", :path => '~/Github/gko_cms3/gko_inquiries'
-<<<<<<< HEAD
-<<<<<<< HEAD
 #end   
 
-=======
-#end  
->>>>>>> FETCH_HEAD
-=======
-#end  
->>>>>>> FETCH_HEAD

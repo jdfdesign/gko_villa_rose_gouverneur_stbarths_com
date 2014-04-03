@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <%# resource_cache(resource) do %> 
 	<%= content_tag_for(:li, resource, :class => "row") do %>
 		<div class="col-xs-12 page-content"> 
@@ -6,12 +7,17 @@
 			<div class='page-images'>
 				<%= render_slideshow_for(resource) %>
 =======
+=======
+>>>>>>> FETCH_HEAD
 <% resource_cache(resource) do %> 
 	<%= content_tag_for(:li, resource, :class => "row-fluid") do %>
 		<div class="span12 page-content"> 
 			<% if resource.images.any? %>
 			<div class='page-images'>
 				<%= render_slideshow_for(resource, :plugin => 'galleria') %>
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
 				<h3 class='slideshow-title'><%= resource.title %></h3>
 			</div>
@@ -25,7 +31,11 @@
 		</div>
 	<% end %> 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <%# end %>
+=======
+<% end %>
+>>>>>>> FETCH_HEAD
 =======
 <% end %>
 >>>>>>> FETCH_HEAD

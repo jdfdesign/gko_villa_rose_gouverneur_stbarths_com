@@ -1,7 +1,6 @@
 <% if resource.images.any? %>
-<div class='page-images'>
-  <%= render_slideshow_for(resource, :plugin => 'galleria') %>
-  <h3 class='slideshow-title'><%= resource.title %></h3>
+<div class='page-images no-pad'>
+  <%= render_slideshow_for(resource, :plugin => 'carousel') %>
 </div>
 <% end %>
 <div class='article-content'>
